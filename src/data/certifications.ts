@@ -2,27 +2,28 @@ import { Certification } from "@/types";
 
 export const certifications: Certification[] = [
   {
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    url: "https://aws.amazon.com/certification/",
+    title: "Google Cloud Fundamentals: Core Infrastructure",
+    issuer: "Google Cloud",
+    date: "2025",
   },
   {
-    title: "Microsoft Certified: Azure Developer Associate",
-    issuer: "Microsoft",
-    date: "2023",
-    url: "https://learn.microsoft.com/en-us/certifications/",
+    title: "Getting Started with Google Kubernetes Engine",
+    issuer: "Google Cloud",
+    date: "2025",
   },
   {
-    title: "Meta Front-End Developer Professional Certificate",
-    issuer: "Meta (Coursera)",
-    date: "2023",
-    url: "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+    title: "Essential Google Cloud Infrastructure: Core Services",
+    issuer: "Google Cloud",
+    date: "2025",
   },
   {
-    title: "Google Project Management Certificate",
-    issuer: "Google (Coursera)",
-    date: "2022",
-    url: "https://www.coursera.org/professional-certificates/google-project-management",
+    title: "Create and Manage Cloud Resources",
+    issuer: "Google Cloud",
+    date: "2025",
+  },
+  {
+    title: "Perform Foundational Infrastructure Tasks in Google Cloud",
+    issuer: "Google Cloud",
+    date: "2025",
   },
 ];

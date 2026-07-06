@@ -69,7 +69,7 @@ export function Hero() {
 
         <motion.div variants={fadeInUp} className="mt-12 flex items-center justify-center gap-4">
           <a
-            href="https://github.com/sumitmishra"
+            href="https://github.com/sumitmishras"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-12 w-12 items-center justify-center rounded-full border border-border hover:border-primary hover:text-primary hover:shadow-glow transition-all duration-300"

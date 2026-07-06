@@ -3,38 +3,38 @@ import { GithubIcon, LinkedinIcon } from "@/components/ui/icons";
 
 export const personalInfo = {
   name: "Sumit Mishra",
-  title: "Senior Software Engineer",
-  email: "sumit.mishra@email.com",
-  location: "India",
-  phone: "+91-XXXXXXXXXX",
+  title: "Software Engineer",
+  email: "cse.sumitmishra@gmail.com",
+  location: "Sahibzada Ajit Singh Nagar, India",
+  phone: "+916284397436",
   resumeUrl: "/resume/resume.pdf",
   description:
-    "Senior Software Engineer with expertise in building scalable web applications. Passionate about clean code, performance optimization, and delivering exceptional user experiences.",
+    "Detail-oriented Software Engineer experienced in ASP.NET development, MySQL management, and CI/CD deployment. Proficient in Docker, Azure DevOps, and AWS services, with a solid foundation in Google Cloud Platform, including Kubernetes.",
   shortBio:
-    "Full-stack developer specializing in React, Next.js, and ASP.NET with 5+ years of experience building high-performance applications.",
+    "Software Engineer specializing in ASP.NET, MySQL, and cloud technologies with hands-on experience in Docker, Azure DevOps, and AWS.",
   aboutParagraphs: [
-    "I am a Senior Software Engineer with over 5 years of experience designing and building enterprise-grade web applications. My journey in software development began with a curiosity for how things work, which evolved into a deep passion for crafting elegant solutions to complex problems.",
-    "I specialize in modern JavaScript frameworks, particularly React and Next.js for frontend development, and ASP.NET with C# for robust backend systems. I believe in writing clean, maintainable code that stands the test of time.",
-    "When I'm not coding, I enjoy contributing to open-source projects, writing technical blog posts, and exploring new technologies. I'm a firm believer in continuous learning and staying at the cutting edge of web development.",
+    "I am a Software Engineer with experience in ASP.NET development, MySQL management, and CI/CD deployment. My expertise spans Docker containerization, Azure DevOps pipelines, and AWS cloud services including EC2, S3, and Lightsail.",
+    "I have a solid foundation in Google Cloud Platform with hands-on Kubernetes training and a deep understanding of cloud computing core concepts. I specialize in building robust web applications using ASP.NET, HTML5, CSS3, and REST APIs.",
+    "Currently seeking a role in Cloud Engineering or DevOps where I can leverage my skills in cloud services, containerization, and continuous deployment to drive infrastructure excellence.",
   ],
-  interests: ["Open Source", "Cloud Computing", "System Design", "Tech Blogging", "AI/ML"],
+  interests: ["Cloud Computing", "DevOps", "Kubernetes", "Open Source", "Web Development"],
   goals: [
-    "Build products that make a difference",
+    "Transition into Cloud Engineering or DevOps role",
+    "Master Kubernetes and container orchestration",
+    "Build scalable cloud-native applications",
     "Contribute to the developer community",
-    "Master system design and architecture",
-    "Explore AI and machine learning",
   ],
   technologies: [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "JavaScript",
     "C#",
     "ASP.NET",
-    "Node.js",
-    "PostgreSQL",
+    "JavaScript",
+    "MySQL",
+    "Docker",
+    "Azure DevOps",
     "AWS",
-    "Azure",
+    "GCP",
+    "Kubernetes",
+    "Git",
   ],
 };
 
@@ -51,6 +51,6 @@ export const navLinks: NavLink[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: "GitHub", url: "https://github.com/sumitmishra", icon: GithubIcon },
+  { name: "GitHub", url: "https://github.com/sumitmishras", icon: GithubIcon },
   { name: "LinkedIn", url: "https://linkedin.com/in/sumitmishra", icon: LinkedinIcon },
 ];

@@ -36,7 +36,7 @@ export function Footer() {
             <h4 className="font-semibold mb-3">Connect</h4>
             <div className="flex gap-3">
               <a
-                href="https://github.com/sumitmishra"
+                href="https://github.com/sumitmishras"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg border border-border hover:border-primary hover:text-primary transition-colors"

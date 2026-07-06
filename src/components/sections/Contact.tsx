@@ -11,7 +11,7 @@ const contactDetails = [
   { icon: Mail, label: "Email", value: personalInfo.email, href: `mailto:${personalInfo.email}` },
   { icon: Phone, label: "Phone", value: personalInfo.phone },
   { icon: MapPin, label: "Location", value: personalInfo.location },
-  { icon: GithubIcon, label: "GitHub", value: "github.com/sumitmishra", href: "https://github.com/sumitmishra" },
+  { icon: GithubIcon, label: "GitHub", value: "github.com/sumitmishras", href: "https://github.com/sumitmishras" },
   { icon: LinkedinIcon, label: "LinkedIn", value: "linkedin.com/in/sumitmishra", href: "https://linkedin.com/in/sumitmishra" },
 ];
 

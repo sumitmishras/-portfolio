@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { experiences } from "@/data/experience";
 import { skills } from "@/data/skills";
 import { certifications } from "@/data/certifications";
+import { education } from "@/data/education";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -72,6 +73,20 @@ export default function ResumePage() {
                 <div key={skill.name} className="flex items-center justify-between">
                   <span className="text-sm">{skill.name}</span>
                   <span className="text-xs text-muted-foreground">{skill.proficiency}%</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4">Education</h2>
+            <div className="space-y-4">
+              {education.map((edu) => (
+                <div key={edu.degree} className="border-l-2 border-primary pl-4">
+                  <h3 className="font-semibold">{edu.degree}</h3>
+                  <p className="text-sm text-primary">{edu.institution}, {edu.location}</p>
+                  <p className="text-sm text-muted-foreground">Graduated: {edu.duration}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{edu.description}</p>
                 </div>
               ))}
             </div>
