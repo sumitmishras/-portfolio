@@ -18,7 +18,8 @@ const contactDetails = [
 export function Contact() {
   return (
     <section id="contact" className="relative py-24">
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="absolute inset-0 bg-mesh" />
+      <div className="mx-auto max-w-6xl px-4 relative">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -27,9 +28,9 @@ export function Contact() {
           className="text-center"
         >
           <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold">
-            Get In <span className="gradient-text">Touch</span>
+            Get In <span className="gradient-text-strong">Touch</span>
           </motion.h2>
-          <motion.div variants={fadeInUp} className="mt-2 h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full mx-auto" />
+          <motion.div variants={fadeInUp} className="mt-3 h-1 w-20 bg-gradient-to-r from-primary via-accent to-purple-500 rounded-full mx-auto" />
           <motion.p variants={fadeInUp} className="mt-4 text-muted-foreground max-w-xl mx-auto">
             Have a project in mind or just want to say hi? I&apos;d love to hear from you.
           </motion.p>
@@ -42,10 +43,10 @@ export function Contact() {
           variants={staggerContainer}
           className="mt-12 grid gap-8 md:grid-cols-2"
         >
-          <motion.div variants={fadeInUp} className="space-y-6">
+          <motion.div variants={fadeInUp} className="space-y-5">
             {contactDetails.map((detail) => (
-              <div key={detail.label} className="flex items-center gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+              <div key={detail.label} className="flex items-center gap-4 rounded-xl border bg-card p-4 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 gradient-border-card">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-accent/20">
                   <detail.icon className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -67,7 +68,7 @@ export function Contact() {
             ))}
           </motion.div>
 
-          <motion.div variants={fadeInUp}>
+          <motion.div variants={fadeInUp} className="rounded-xl border bg-card p-6 shadow-card gradient-border-card">
             <ContactForm />
           </motion.div>
         </motion.div>

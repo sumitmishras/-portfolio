@@ -29,17 +29,15 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "glass shadow-sm"
-          : "bg-transparent"
+        scrolled ? "glass shadow-lg" : "bg-transparent"
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="text-xl font-bold gradient-text"
+          className="text-xl font-bold"
         >
-          {"<SM />"}
+          <span className="gradient-text-strong">&lt;SM /&gt;</span>
         </button>
 
         <nav className="hidden md:flex items-center gap-1">
@@ -48,10 +46,10 @@ export function Navbar() {
               key={link.href}
               onClick={() => handleClick(link.href)}
               className={cn(
-                "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
+                "px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200",
                 activeSection === link.href.replace("#", "")
-                  ? "text-primary bg-primary/10"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  ? "text-white bg-gradient-to-r from-primary to-accent shadow-sm"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
               )}
             >
               {link.label}
