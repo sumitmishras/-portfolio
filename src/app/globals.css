@@ -47,6 +47,11 @@
     color: var(--color-foreground);
   }
 
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #2563eb, #38bdf8); border-radius: 3px; }
+  .dark ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #2563eb, #38bdf8); }
+
   ::selection {
     background-color: var(--color-primary);
     color: white;
